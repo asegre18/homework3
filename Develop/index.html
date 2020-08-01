@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -17,6 +18,8 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <!-- added a button that will display the parameters for the generated password -->
+          <button id="passwordParam" class="btn">Password Parameters</button>
           <textarea
             readonly
             id="password"
@@ -24,8 +27,18 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <div>
+          <!-- added a form to prompt the user for length of password and what special character they want to use -->
+          <!-- use alerts to prompt the user -->
+          <!-- <form id="form">
+            <input type="number" id="passwordLength" name="passwordLength" placeholder="Enter 8 - 128"/>
+            <input id="specialChar" name="specialChar" placeholder="Special Character Selection?"/>
+          </form> -->
+        </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
+          <!-- add a button to copy the password generated -->
+          <button id="copy" class="btn">Copy Password</button>
         </div>
       </div>
     </div>
