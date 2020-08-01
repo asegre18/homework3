@@ -32,7 +32,6 @@ while (!symbolBool && !numberBool && !lowerCaseBool && !upperCaseBool) {
 
 // If statements for each case
 
-
 if (symbolBool) {
   // availableChar = add symbols to the Array...
   availableChar = symbols.concat();
